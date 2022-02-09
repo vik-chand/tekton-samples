@@ -22,6 +22,7 @@ metadata:
   name: sample-manual-trigger-binding
 spec:
   params:
+  
 ---
 apiVersion: tekton.dev/v1beta1
 kind: EventListener
