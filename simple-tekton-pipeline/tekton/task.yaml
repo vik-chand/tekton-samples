@@ -1,0 +1,13 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: sample-task
+spec:
+  params:
+  resources:
+  steps:
+    - name: sample-python-task
+      image: python      
+      script: |
+        #!/usr/bin/env python3
+        print("Hello from Python!")

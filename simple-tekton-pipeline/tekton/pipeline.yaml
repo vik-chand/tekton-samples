@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: sample-pipeline
+spec:
+  params: 
+  tasks:
+    - name: sample-task
+      taskRef:
+        name: sample-task
+      params:
